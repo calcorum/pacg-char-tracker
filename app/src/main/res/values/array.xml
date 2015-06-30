@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="characters">
+        <item>Amiri</item>
+        <item>Ezren</item>
+        <item>Harsk</item>
+        <item>Kyra</item>
+        <item>Lem</item>
+        <item>Lini</item>
+        <item>Merisiel</item>
+        <item>Sajan</item>
+        <item>Seelah</item>
+        <item>Seoni</item>
+        <item>Valeros</item>
+    </string-array>
+    
+    <string-array name="one_to_four">
+        <item>+0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+    </string-array>
+    <string-array name="one_to_three">
+        <item>+0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+    </string-array>
+    <string-array name="one_to_two">
+        <item>+0</item>
+        <item>+1</item>
+        <item>+2</item>
+    </string-array>
+    <string-array name="one_to_one">
+        <item>+0</item>
+        <item>+1</item>
+    </string-array>
+    <string-array name="none">
+        <item>N/A</item>
+    </string-array>
+    
+    <string-array name="zero">
+    	<item>0</item>
+    </string-array>
+    <string-array name="zero_thru_one">
+    	<item>0</item>
+    	<item>1</item>
+    </string-array>
+    <string-array name="zero_thru_two">
+    	<item>0</item>
+    	<item>1</item>
+    	<item>2</item>
+    </string-array>
+    <string-array name="zero_thru_three">
+    	<item>0</item>
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    </string-array>
+    <string-array name="one_thru_two">
+    	<item>1</item>
+    	<item>2</item>
+    </string-array>
+    <string-array name="one_thru_three">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    </string-array>
+    <string-array name="one_thru_four">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+    </string-array>
+    <string-array name="two_thru_three">
+    	<item>2</item>
+    	<item>3</item>
+    </string-array>
+    <string-array name="two_thru_four">
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+    </string-array>
+    <string-array name="two_thru_five">
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    </string-array>
+    <string-array name="three_thru_four">
+    	<item>3</item>
+    	<item>4</item>
+    </string-array>
+    <string-array name="three_thru_five">
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    </string-array>
+    <string-array name="three_thru_six">
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    </string-array>
+    <string-array name="four_thru_five">
+    	<item>4</item>
+    	<item>5</item>
+    </string-array>
+    <string-array name="four_thru_six">
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    </string-array>
+    <string-array name="four_thru_seven">
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    </string-array>
+    <string-array name="five_thru_five">
+    	<item>5</item>
+    </string-array>
+    <string-array name="five_thru_six">
+    	<item>5</item>
+    	<item>6</item>
+    </string-array>
+    <string-array name="five_thru_seven">
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    </string-array>
+    <string-array name="five_thru_eight">
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    </string-array>
+    <string-array name="six_thru_six">
+    	<item>6</item>
+    </string-array>
+    <string-array name="six_thru_seven">
+    	<item>6</item>
+    	<item>7</item>
+    </string-array>
+    <string-array name="six_thru_eight">
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    </string-array>
+    <string-array name="six_thru_nine">
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    	<item>9</item>
+    </string-array>
+    <string-array name="eight_thru_ten">
+    	<item>8</item>
+    	<item>9</item>
+    	<item>10</item>
+    </string-array>
+    <string-array name="eight_thru_eleven">
+    	<item>8</item>
+    	<item>9</item>
+    	<item>10</item>
+    	<item>11</item>
+    </string-array>
+    
+    <string-array name="power_amiri_0_1">
+        <item>&#8230;bury a card from your hand to add 1d10&#8230; (Base)</item>
+        <item>&#8230;bury a card from your hand to add 1d10 +1&#8230;</item>
+    </string-array>
+    <string-array name="power_amiri_012_2">
+        <item>&#8230;You may move at the end of your turn&#8230; (Base)</item>
+        <item>&#8230;and/or move another character to the location&#8230;</item>
+    </string-array>
+    <string-array name="power_amiri_1_1">
+        <item>&#8230;bury a card from your hand to add 1d10&#8230; (Base)</item>
+        <item>&#8230;bury a card from your hand or the top card of your deck to add 1d10&#8230;</item>
+        <item>&#8230;to add 1d10&#8230; (Base)</item>
+        <item>&#8230;to add 1d10 +1&#8230;</item>
+        <item>&#8230;to add 1d10 +2&#8230;</item>
+        <item>&#8230;to add 1d10 +3&#8230;</item>
+        <item>&#8230;to add 1d10 +4&#8230;</item>
+    </string-array>
+    <string-array name="power_amiri_12_34">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+        <item>&#8230;Add 4 to your check&#8230;</item>
+    </string-array>
+    <string-array name="power_amiri_12_45">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;add d12 instead of the normal die&#8230;</item>
+    </string-array>
+    <string-array name="power_amiri_2_1">
+        <item>&#8230;to add 1d10&#8230; (Base)</item>
+        <item>&#8230;to add 1d10 +1&#8230;</item>
+        <item>&#8230;to add 1d10 +2&#8230;</item>
+        <item>&#8230;to add 1d10 +3&#8230;</item>
+    </string-array>
+    <string-array name="power_amiri_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;When you are dealt Combat damage&#8230;</item>
+        <item>&#8230;When you are dealt Combat or any other type of damage&#8230;</item>
+    </string-array>
+    
+    
+    <string-array name="power_seoni_0_1_base">
+        <item>&#8230;Arcane die +1d6&#8230; (Base)</item>
+        <item>&#8230;Arcane die +1d6 +1&#8230;</item>
+        <item>&#8230;Arcane die +1d6 +2&#8230;</item>
+    </string-array>
+    <string-array name="power_seoni_012_2_base">
+        <item>&#8230;recharge a spell&#8230; (Base)</item>
+        <item>&#8230;recharge a spell or item&#8230;</item>
+    </string-array>
+    <string-array name="power_seoni_12_1">
+        <item>&#8230;Arcane die +1d6&#8230; (Base)</item>
+        <item>&#8230;Arcane die +1d6 +1&#8230;</item>
+        <item>&#8230;Arcane die +1d6 +2&#8230;</item>
+        <item>&#8230;Arcane die +1d6 +3&#8230;</item>
+        <item>&#8230;Arcane die +1d6 +4&#8230;</item>
+        <item>&#8230;with the Fire trait&#8230; (Base)</item>
+        <item>&#8230;with the Fire or Acid trait&#8230;</item>
+    </string-array>
+    <string-array name="power_seoni_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Reduce Fire damage&#8230;</item>
+        <item>&#8230;Reduce Fire and Acid and Cold damage&#8230;</item>
+        <item>&#8230;by 1&#8230; (Base)</item>
+        <item>&#8230;by 2&#8230;</item>
+    </string-array>
+    <string-array name="power_seoni_1_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;add d12 instead of normal die&#8230;</item>
+    </string-array>
+    <string-array name="power_seoni_1_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;banish an ally to draw 3 cards&#8230;</item>
+    </string-array>
+    <string-array name="power_seoni_2_3">
+        <item>&#8230;No Feat&#8230;</item>
+        <item>If you would fail a check by 1, you may bury a card to succeed.</item>
+    </string-array>
+    <string-array name="power_seoni_2_4">
+        <item>&#8230;No Feat&#8230;</item>
+        <item>&#8230;Reduce Fire damage&#8230; (Base)</item>
+        <item>&#8230;Reduce Fire and Electricity damage&#8230;</item>
+        <item>&#8230;by 1&#8230; (Base)</item>
+        <item>&#8230;by 2&#8230;</item>
+    </string-array>
+    <string-array name="power_seoni_2_5">
+        <item>&#8230;No Feat&#8230;</item>
+        <item>&#8230;add d12 instead of the normal die&#8230;</item>
+    </string-array>
+    
+    
+    <string-array name="power_ezren_0_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 1 to your check&#8230;</item>
+		<item>&#8230;Add 2 to your check&#8230;</item>
+    </string-array>
+    <string-array name="power_ezren_12_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 1 to your check&#8230;</item>
+		<item>&#8230;Add 2 to your check&#8230;</item>
+		<item>&#8230;Add 3 to your check&#8230;</item>
+		<item>&#8230;Add 4 to your check&#8230;</item>
+    </string-array>
+    <string-array name="power_ezren_1_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your Arcane check&#8230;</item>
+		<item>&#8230;with the Force or Acid and Cold traits&#8230;</item>
+		<item>&#8230;with the Force or Electricity and Fire traits&#8230;</item>
+    </string-array>
+    <string-array name="power_ezren_1_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+		<item>&#8230;Add 4 to your check&#8230;</item>
+    </string-array>
+    <string-array name="power_ezren_2_1">
+        <item>&#8230;you may put it in your hand&#8230; (Base)</item>
+        <item>&#8230;you may put it in your hand or recharge it&#8230;</item>
+    </string-array>
+    <string-array name="power_ezren_2_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may put the monster on the bottom of the deck&#8230;</item>
+    </string-array>
+    <string-array name="power_ezren_2_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+		<item>&#8230;Add 4 to your check&#8230;</item>
+		<item>&#8230;to acquire a spell&#8230; (Base)</item>
+		<item>&#8230;to acquire a spell or ally&#8230;</item>
+    </string-array>
+    <string-array name="power_ezren_2_6">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may discard a card to draw a card&#8230;</item>
+    </string-array>
+    
+    
+    <string-array name="power_merisiel_0_2">
+        <item>&#8230;add 1d6 to your combat check&#8230; (Base)</item>
+        <item>&#8230;add 1d6 +1 to your combat check&#8230;</item>
+        <item>&#8230;add 1d6 +2 to your combat check&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_1_1">
+        <item>&#8230;You may evade your encounter&#8230; (Base)</item>
+        <item>&#8230;and may put the card on top of the deck&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_1_2">
+        <item>&#8230;add 1d6 to your combat check&#8230; (Base)</item>
+        <item>&#8230;add 1d6 +1 to your combat check&#8230;</item>
+        <item>&#8230;add 1d6 +2 to your combat check&#8230;</item>
+        <item>&#8230;add 1d6 +3 to your combat check&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your noncombat check to defeat a barrier&#8230;</item>
+        <item>&#8230;or close a location&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_1_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+		<item>&#8230;Add 4 to your check&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_1_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may recharge it instead of discarding it&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_2_2">
+        <item>&#8230;add 1d6 to your combat check&#8230; (Base)</item>
+        <item>&#8230;add 1d6 +1 to your combat check&#8230;</item>
+        <item>&#8230;add 1d6 +2 to your combat check&#8230;</item>
+        <item>&#8230;add 1d6 +3 to your combat check&#8230;</item>
+        <item>&#8230;add 1d6 +4 to your combat check&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your noncombat check to close a location&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_2_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+		<item>&#8230;Add 3 to your check&#8230;</item>
+		<item>&#8230;Add 4 to your check&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_2_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may recharge it instead of discarding it&#8230;</item>
+    </string-array>
+    <string-array name="power_merisiel_2_6">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;You may use Charisma in place of any skill&#8230;</item>
+    </string-array>
+	
+	
+	<string-array name="power_harsk_01_1">
+		<item>&#8230;You may examine the top card&#8230; (Base)</item>
+        <item>&#8230;or bottom card&#8230;</item>
+	</string-array>
+	<string-array name="power_harsk_2_1">
+		<item>&#8230;You may examine the top card&#8230; (Base)</item>
+        <item>&#8230;or bottom card&#8230;</item>
+        <item>&#8230;or bottom card or both&#8230;</item>
+	</string-array>
+    <string-array name="power_harsk_0_2">
+        <item>&#8230;add 1d4 to a combat check&#8230; (Base)</item>
+        <item>&#8230;add 1d4 +1 to a combat check&#8230;</item>
+        <item>&#8230;add 1d4 +2 to a combat check&#8230;</item>
+    </string-array>
+    <string-array name="power_harsk_1_2">
+        <item>&#8230;add 1d4 to a combat check&#8230; (Base)</item>
+        <item>&#8230;add 1d4 +1 to a combat check&#8230;</item>
+        <item>&#8230;add 1d4 +2 to a combat check&#8230;</item>
+        <item>&#8230;add 1d4 +3 to a combat check&#8230;</item>
+        <item>&#8230;add 1d4 +4 to a combat check&#8230;</item>
+    </string-array>
+    <string-array name="power_harsk_2_2">
+        <item>&#8230;add 1d4 to a combat check&#8230; (Base)</item>
+        <item>&#8230;add 1d4 +1 to a combat check&#8230;</item>
+        <item>&#8230;add 1d4 +2 to a combat check&#8230;</item>
+        <item>&#8230;add 1d4 +3 to a combat check&#8230;</item>
+    </string-array>
+	<string-array name="power_harsk_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may draw 1 card&#8230;</item>
+        <item>&#8230;you may draw 2 card&#8230;</item>
+	</string-array>
+	<string-array name="power_harsk_12_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may recharge it instead of discarding&#8230;</item>
+	</string-array>
+	<string-array name="power_harsk_12_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you gain the skill Divine: Wisdom +1&#8230;</item>
+	</string-array>
+	<string-array name="power_harsk_12_6">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;add d12 instead of the normal die&#8230;</item>
+	</string-array>
+	<string-array name="power_harsk_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;add 1d8 to your check&#8230;</item>
+        <item>&#8230;add 1d8 +1 to your check&#8230;</item>
+	</string-array>
+	
+	
+	<string-array name="power_kyra_02_1">
+		<item>&#8230;Shuffle 1d4 +1 random cards&#8230; (Base)</item>
+		<item>&#8230;Shuffle 1d4 +2 random cards&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_1_1">
+		<item>&#8230;Shuffle 1d4 +1 random cards&#8230; (Base)</item>
+		<item>&#8230;Shuffle 1d4 +2 random cards&#8230;</item>
+		<item>&#8230;Shuffle 1d4 +3 random cards&#8230;</item>
+		<item>&#8230;then discard the card you revealed&#8230; (Base)</item>
+		<item>&#8230;then discard the card you revealed and draw a card&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_01_2">
+		<item>&#8230;Add 1d8 with the Magic trait&#8230; (Base)</item>
+		<item>&#8230;Add 1d8 +1 with the Magic trait&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_2_2">
+		<item>&#8230;Add 1d8 with the Magic trait&#8230; (Base)</item>
+		<item>&#8230;Add 1d8 +1 with the Magic trait&#8230;</item>
+		<item>&#8230;to defeat a bane with the Undead trait&#8230; (Base)</item>
+		<item>&#8230;to defeat a bane with the Undead or Outsider trait&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+        <item>&#8230;Add 4 to your check&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_1_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may recharge it instead of discarding&#8230;</item>
+        <item>&#8230;or shuffle it into your deck instead of discarding&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check to acquire an armor&#8230;</item>
+        <item>&#8230;Add 2 to your check to acquire an armor or weapon&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_2_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may recharge it instead of discarding&#8230;</item>
+        <item>&#8230;or or place it on top of your deck instead of discarding&#8230;</item>
+	</string-array>
+	<string-array name="power_kyra_2_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;If you defeat a bane with the Undead trait&#8230;</item>
+        <item>&#8230;If you defeat a bane with the Undead or Oustider trait&#8230;</item>
+	</string-array>
+	
+	
+	<string-array name="power_lem_0_1">
+		<item>&#8230;you may recharge a card to add 1d4 to a check&#8230; (Base)</item>
+		<item>&#8230;you may recharge a card to add 1d4 +1 to a check&#8230;</item>
+		<item>&#8230;you may recharge a card to add 1d4 +2 to a check&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_1_1">
+		<item>&#8230;you may recharge a card to add 1d4 to a check&#8230; (Base)</item>
+		<item>&#8230;you may recharge a card to add 1d4 +1 to a check&#8230;</item>
+		<item>&#8230;you may recharge a card to add 1d4 +2 to a check&#8230;</item>
+		<item>&#8230;you may recharge a card to add 1d4 +3 to a check&#8230;</item>
+		<item>&#8230;attempted by another character&#8230; (Base)</item>
+		<item>&#8230;attempted by you or another character&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_2_1">
+		<item>&#8230;you may recharge a card to add 1d4 to a check&#8230; (Base)</item>
+		<item>&#8230;you may recharge a card to add 1d4 +1 to a check&#8230;</item>
+		<item>&#8230;you may recharge a card to add 1d4 +2 to a check&#8230;</item>
+		<item>&#8230;you may recharge a card to add 1d4 +3 to a check&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_1_2">
+        <item>&#8230;At the start of your turn&#8230; (Base)</item>
+        <item>&#8230;At the start or end of your turn&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check to acquire an ally&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_1_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check to recharge a spell&#8230;</item>
+        <item>&#8230;Add 2 to your check to acquire or acquire a spell.&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_12_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;add d12 instead of the normal die&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check to acquire an ally&#8230;</item>
+        <item>&#8230;or defeat a henchman&#8230;</item>
+        <item>&#8230;or defeat a henchman or villian&#8230;</item>
+	</string-array>
+	<string-array name="power_lem_2_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;recharge a card with the Mental trait&#8230;</item>
+	</string-array>
+	
+	
+	<string-array name="power_lini_0_2">
+        <item>&#8230;add 1d4 to your check&#8230; (Base)</item>
+        <item>&#8230;add 1d4 +1 to your check&#8230;</item>
+        <item>&#8230;add 1d4 +2 to your check&#8230;</item>
+	</string-array>
+	<string-array name="power_lini_1_2">
+        <item>&#8230;add 1d4 to your check&#8230; (Base)</item>
+        <item>&#8230;add 1d4 +1 to your check&#8230;</item>
+        <item>&#8230;add 1d4 +2 to your check&#8230;</item>
+        <item>&#8230;add 1d4 +3 to your check&#8230;</item>
+	</string-array>
+	<string-array name="power_lini_2_2">
+        <item>&#8230;add 1d4 to your check&#8230; (Base)</item>
+        <item>&#8230;add 1d4 +1 to your check&#8230;</item>
+        <item>&#8230;add 1d4 +2 to your check&#8230;</item>
+        <item>&#8230;add 1d4 +3 to your check&#8230;</item>
+        <item>&#8230;add 1d4 +4 to your check&#8230;</item>
+	</string-array>
+	<string-array name="power_lini_1_3">
+        <item>&#8230;roll 1d10 instead of your Strength or Dexterity die&#8230; (Base)</item>
+        <item>&#8230;roll 1d10 +1&#8230;</item>
+        <item>&#8230;roll 1d10 +2&#8230;</item>
+        <item>&#8230;roll 1d10 +2 with the Fire trait&#8230;</item>
+	</string-array>
+	<string-array name="power_lini_1_4">
+		<item>&#8230;No Feat&#8230; (Base)</item>
+		<item>&#8230;Add 2 to your check to acquire an ally&#8230;</item>
+		<item>&#8230;Add 4 to your check to acquire an ally&#8230;</item>
+	</string-array>
+	<string-array name="power_lini_12_56">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;add d12 instead of the normal die&#8230;</item>
+	</string-array>
+	<string-array name="power_lini_2_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your Divine check&#8230;</item>
+        <item>&#8230;Add 4 to your Divine check&#8230;</item>
+	</string-array>
+	<string-array name="power_lini_2_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 1d8 with the Magic trait&#8230;</item>
+	</string-array>
+	
+	<string-array name="power_sajan_012_1">
+	    <item>&#8230;you may use your Dexterity die&#8230; (Base)</item>
+        <item>&#8230;and add the Magic trait&#8230;</item>
+        <item>&#8230;and the Fire trait&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;reduce that damage by 1&#8230;</item>
+        <item>&#8230;reduce that damage by 2&#8230;</item>
+        <item>&#8230;reduce that damage by 3&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;reduce that damage by 1&#8230;</item>
+        <item>&#8230;reduce that damage by 2&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_1_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;succeed at a Fortitude 6 check to recharge it&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_1_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 6 to your check&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_1_6">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you must draw 1 card&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_2_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may recharge it instead of discarding it&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_2_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+        <item>&#8230;Add 4 to your check&#8230;</item>
+	</string-array>
+	<string-array name="power_sajan_2_6">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may draw 1 card&#8230;</item>
+	</string-array>
+	
+	<string-array name="power_seelah_0_1">
+	    <item>&#8230;add 1d6 to your check&#8230; (Base)</item>
+        <item>&#8230;add 1d6 +1&#8230;</item>
+	    <item>&#8230;If the top card was a blessing&#8230; (Base)</item>
+        <item>&#8230;or a spell&#8230;</item>
+	</string-array>
+	<string-array name="power_seelah_12_1">
+	    <item>&#8230;add 1d6 to your check&#8230; (Base)</item>
+        <item>&#8230;add 1d6 +1&#8230;</item>
+        <item>&#8230;add 1d6 +2&#8230;</item>
+        <item>&#8230;add 1d6 +3&#8230;</item>
+	    <item>&#8230;If the top card was a blessing&#8230; (Base)</item>
+        <item>&#8230;or a spell&#8230;</item>
+	</string-array>
+	<string-array name="power_seelah_0_2">
+	    <item>&#8230;at the start of your turn&#8230; (Base)</item>
+        <item>&#8230;at the start or end of your turn&#8230;</item>
+	</string-array>
+	<string-array name="power_seelah_12_2">
+	    <item>&#8230;at the start of your turn&#8230; (Base)</item>
+        <item>&#8230;at the start or end of your turn&#8230;</item>
+	    <item>&#8230;put it on the bottom of the deck&#8230; (Base)</item>
+        <item>&#8230;or underneath the top card of the deck&#8230;</item>
+	</string-array>
+	<string-array name="power_seelah_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;reduce that damage by 1&#8230;</item>
+	</string-array>
+	<string-array name="power_seelah_1_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 1d8 with the Magic trait&#8230;</item>
+	</string-array>
+	<string-array name="power_seelah_12_54">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;you may recharge it&#8230;</item>
+        <item>&#8230;or shuffle it into your deck&#8230;</item>
+	</string-array>
+	<string-array name="power_seelah_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;shuffle 1d4 +1 random cards&#8230;</item>
+	</string-array>
+	
+	<string-array name="power_valeros_0_1">
+	    <item>&#8230;Add 1d4 to another character\'s combat&#8230; (Base)</item>
+	    <item>&#8230;Add 1d4 +1&#8230;</item>
+	    <item>&#8230;Add 1d4 +2&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_1_1">
+	    <item>&#8230;Add 1d4 to another character\'s combat&#8230; (Base)</item>
+	    <item>&#8230;Add 1d4 +1&#8230;</item>
+	    <item>&#8230;Add 1d4 +2&#8230;</item>
+	    <item>&#8230;Add 1d4 +3&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_2_1">
+	    <item>&#8230;Add 1d4 to another character\'s combat&#8230; (Base)</item>
+	    <item>&#8230;Add 1d4 +1&#8230;</item>
+	    <item>&#8230;Add 1d4 +2&#8230;</item>
+	    <item>&#8230;Add 1d4 +3&#8230;</item>
+	    <item>&#8230;Add 1d4 +4&#8230;</item>
+	    <item>&#8230;Add 1d4 +5&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_1_2">
+        <item>&#8230;When you play a weapon&#8230; (Base)</item>
+        <item>&#8230;When you play a weapon or armor&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_2_2">
+        <item>&#8230;you may recharge it&#8230; (Base)</item>
+        <item>&#8230;or shuffle it into your deck&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_1_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;reduce that damage by 1&#8230;</item>
+        <item>&#8230;reduce that damage by 2&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_12_4">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;Add 2 to your check&#8230;</item>
+        <item>&#8230;Add 4 to your check&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_12_5">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;add d12 instead of the normal die&#8230;</item>
+	</string-array>
+	<string-array name="power_valeros_2_3">
+        <item>&#8230;No Feat&#8230; (Base)</item>
+        <item>&#8230;You may use Melee in place of Ranged&#8230;</item>
+	</string-array>
+	
+	
+	<string-array name="prof_heavy">
+	    <item>Not Proficient</item>
+	    <item>Proficient with Heavy Armors</item>
+	</string-array>
+	<string-array name="prof_light">
+	    <item>Not Proficient</item>
+	    <item>Proficient with Light Armors</item>
+	</string-array>
+	<string-array name="prof_weapon">
+	    <item>Not Proficient</item>
+	    <item>Proficient with Weapons</item>
+	</string-array>
+	
+	<!-- Card Arrays -->
+	<string-array name="choose_type">
+	    <item>@string/cards_wea</item>
+	    <item>@string/cards_spe</item>
+	    <item>@string/cards_arm</item>
+	    <item>@string/cards_ite</item>
+	    <item>@string/cards_all</item>
+	    <item>@string/cards_ble</item>
+	</string-array>
+	<string-array name="weapon_array">
+	    <item>@string/cards_remove_card</item>
+        <item>@string/weapon_01</item>
+	    <item>@string/weapon_02</item>
+	    <item>@string/weapon_03</item>
+	    <item>@string/weapon_04</item>
+	    <item>@string/weapon_05</item>
+	    <item>@string/weapon_06</item>
+	    <item>@string/weapon_07</item>
+	    <item>@string/weapon_08</item>
+	    <item>@string/weapon_09</item>
+	    <item>@string/weapon_10</item>
+	    <item>@string/weapon_11</item>
+	    <item>@string/weapon_12</item>
+	    <item>@string/weapon_13</item>
+	    <item>@string/weapon_14</item>
+	    <item>@string/weapon_15</item>
+	    <item>@string/weapon_16</item>
+	    <item>@string/weapon_17</item>
+	    <item>@string/weapon_18</item>
+	    <item>@string/weapon_19</item>
+	    <item>@string/weapon_20</item>
+	    <item>@string/weapon_21</item>
+	    <item>@string/weapon_22</item>
+	    <item>@string/weapon_23</item>
+	    <item>@string/weapon_24</item>
+	    <item>@string/weapon_25</item>
+	    <item>@string/weapon_26</item>
+	    <item>@string/weapon_27</item>
+	    <item>@string/weapon_28</item>
+	    <item>@string/weapon_29</item>
+	    <item>@string/weapon_30</item>
+	    <item>@string/weapon_31</item>
+	    <item>@string/weapon_32</item>
+	    <item>@string/weapon_33</item>
+	    <item>@string/weapon_34</item>
+	    <item>@string/weapon_35</item>
+	    <item>@string/weapon_36</item>
+	    <item>@string/weapon_37</item>
+	    <item>@string/weapon_38</item>
+	    <item>@string/weapon_39</item>
+	    <item>@string/weapon_40</item>
+	    <item>@string/weapon_41</item>
+	    <item>@string/weapon_42</item>
+	    <item>@string/weapon_43</item>
+	    <item>@string/weapon_44</item>
+	    <item>@string/weapon_45</item>
+	    <item>@string/weapon_46</item>
+	    <item>@string/weapon_47</item>
+	    <item>@string/weapon_48</item>
+	    <item>@string/weapon_49</item>
+	    <item>@string/weapon_50</item>
+	    <item>@string/weapon_51</item>
+	    <item>@string/weapon_52</item>
+	    <item>@string/weapon_53</item>
+	    <item>@string/weapon_54</item>
+	    <item>@string/weapon_55</item>
+	    <item>@string/weapon_56</item>
+	    <item>@string/weapon_57</item>
+	    <item>@string/weapon_58</item>
+	    <item>@string/weapon_59</item>
+	    <item>@string/weapon_60</item>
+	    <item>@string/weapon_61</item>
+    </string-array>
+    <string-array name="new_weapon_array">
+        <item>@string/weapon_01</item>
+	    <item>@string/weapon_02</item>
+	    <item>@string/weapon_03</item>
+	    <item>@string/weapon_04</item>
+	    <item>@string/weapon_05</item>
+	    <item>@string/weapon_06</item>
+	    <item>@string/weapon_07</item>
+	    <item>@string/weapon_08</item>
+	    <item>@string/weapon_09</item>
+	    <item>@string/weapon_10</item>
+	    <item>@string/weapon_11</item>
+	    <item>@string/weapon_12</item>
+	    <item>@string/weapon_13</item>
+	    <item>@string/weapon_14</item>
+	    <item>@string/weapon_15</item>
+	    <item>@string/weapon_16</item>
+	    <item>@string/weapon_17</item>
+	    <item>@string/weapon_18</item>
+	    <item>@string/weapon_19</item>
+	    <item>@string/weapon_20</item>
+	    <item>@string/weapon_21</item>
+	    <item>@string/weapon_22</item>
+	    <item>@string/weapon_23</item>
+	    <item>@string/weapon_24</item>
+	    <item>@string/weapon_25</item>
+	    <item>@string/weapon_26</item>
+	    <item>@string/weapon_27</item>
+	    <item>@string/weapon_28</item>
+	    <item>@string/weapon_29</item>
+	    <item>@string/weapon_30</item>
+	    <item>@string/weapon_31</item>
+	    <item>@string/weapon_32</item>
+	    <item>@string/weapon_33</item>
+	    <item>@string/weapon_34</item>
+	    <item>@string/weapon_35</item>
+	    <item>@string/weapon_36</item>
+	    <item>@string/weapon_37</item>
+	    <item>@string/weapon_38</item>
+	    <item>@string/weapon_39</item>
+	    <item>@string/weapon_40</item>
+	    <item>@string/weapon_41</item>
+	    <item>@string/weapon_42</item>
+	    <item>@string/weapon_43</item>
+	    <item>@string/weapon_44</item>
+	    <item>@string/weapon_45</item>
+	    <item>@string/weapon_46</item>
+	    <item>@string/weapon_47</item>
+	    <item>@string/weapon_48</item>
+	    <item>@string/weapon_49</item>
+	    <item>@string/weapon_50</item>
+	    <item>@string/weapon_51</item>
+	    <item>@string/weapon_52</item>
+	    <item>@string/weapon_53</item>
+	    <item>@string/weapon_54</item>
+	    <item>@string/weapon_55</item>
+	    <item>@string/weapon_56</item>
+	    <item>@string/weapon_57</item>
+	    <item>@string/weapon_58</item>
+	    <item>@string/weapon_59</item>
+	    <item>@string/weapon_60</item>
+	    <item>@string/weapon_61</item>
+    </string-array>
+    
+	<string-array name="spell_array">
+	    <item>@string/cards_remove_card</item>
+        <item>@string/spell_01</item>
+	    <item>@string/spell_02</item>
+	    <item>@string/spell_03</item>
+	    <item>@string/spell_04</item>
+	    <item>@string/spell_05</item>
+	    <item>@string/spell_06</item>
+	    <item>@string/spell_07</item>
+	    <item>@string/spell_08</item>
+	    <item>@string/spell_09</item>
+	    <item>@string/spell_10</item>
+	    <item>@string/spell_11</item>
+	    <item>@string/spell_12</item>
+	    <item>@string/spell_13</item>
+	    <item>@string/spell_14</item>
+	    <item>@string/spell_15</item>
+	    <item>@string/spell_16</item>
+	    <item>@string/spell_17</item>
+	    <item>@string/spell_18</item>
+	    <item>@string/spell_19</item>
+	    <item>@string/spell_20</item>
+	    <item>@string/spell_21</item>
+	    <item>@string/spell_22</item>
+	    <item>@string/spell_23</item>
+	    <item>@string/spell_24</item>
+	    <item>@string/spell_25</item>
+	    <item>@string/spell_26</item>
+	    <item>@string/spell_27</item>
+	    <item>@string/spell_28</item>
+	    <item>@string/spell_29</item>
+	    <item>@string/spell_30</item>
+	    <item>@string/spell_31</item>
+	    <item>@string/spell_32</item>
+	    <item>@string/spell_33</item>
+	    <item>@string/spell_34</item>
+	    <item>@string/spell_35</item>
+	    <item>@string/spell_36</item>
+	    <item>@string/spell_37</item>
+	    <item>@string/spell_38</item>
+	    <item>@string/spell_39</item>
+	    <item>@string/spell_40</item>
+	    <item>@string/spell_41</item>
+	    <item>@string/spell_42</item>
+	    <item>@string/spell_43</item>
+	    <item>@string/spell_44</item>
+	    <item>@string/spell_45</item>
+	    <item>@string/spell_46</item>
+	    <item>@string/spell_47</item>
+	    <item>@string/spell_48</item>
+	    <item>@string/spell_49</item>
+	    <item>@string/spell_50</item>
+    </string-array>
+    <string-array name="new_spell_array">
+        <item>@string/spell_01</item>
+	    <item>@string/spell_02</item>
+	    <item>@string/spell_03</item>
+	    <item>@string/spell_04</item>
+	    <item>@string/spell_05</item>
+	    <item>@string/spell_06</item>
+	    <item>@string/spell_07</item>
+	    <item>@string/spell_08</item>
+	    <item>@string/spell_09</item>
+	    <item>@string/spell_10</item>
+	    <item>@string/spell_11</item>
+	    <item>@string/spell_12</item>
+	    <item>@string/spell_13</item>
+	    <item>@string/spell_14</item>
+	    <item>@string/spell_15</item>
+	    <item>@string/spell_16</item>
+	    <item>@string/spell_17</item>
+	    <item>@string/spell_18</item>
+	    <item>@string/spell_19</item>
+	    <item>@string/spell_20</item>
+	    <item>@string/spell_21</item>
+	    <item>@string/spell_22</item>
+	    <item>@string/spell_23</item>
+	    <item>@string/spell_24</item>
+	    <item>@string/spell_25</item>
+	    <item>@string/spell_26</item>
+	    <item>@string/spell_27</item>
+	    <item>@string/spell_28</item>
+	    <item>@string/spell_29</item>
+	    <item>@string/spell_30</item>
+	    <item>@string/spell_31</item>
+	    <item>@string/spell_32</item>
+	    <item>@string/spell_33</item>
+	    <item>@string/spell_34</item>
+	    <item>@string/spell_35</item>
+	    <item>@string/spell_36</item>
+	    <item>@string/spell_37</item>
+	    <item>@string/spell_38</item>
+	    <item>@string/spell_39</item>
+	    <item>@string/spell_40</item>
+	    <item>@string/spell_41</item>
+	    <item>@string/spell_42</item>
+	    <item>@string/spell_43</item>
+	    <item>@string/spell_44</item>
+	    <item>@string/spell_45</item>
+	    <item>@string/spell_46</item>
+	    <item>@string/spell_47</item>
+	    <item>@string/spell_48</item>
+	    <item>@string/spell_49</item>
+	    <item>@string/spell_50</item>
+    </string-array>
+    
+    <string-array name="armor_array">
+	    <item>@string/cards_remove_card</item>
+        <item>@string/armor_01</item>
+	    <item>@string/armor_02</item>
+	    <item>@string/armor_03</item>
+	    <item>@string/armor_04</item>
+	    <item>@string/armor_05</item>
+	    <item>@string/armor_06</item>
+	    <item>@string/armor_07</item>
+	    <item>@string/armor_08</item>
+	    <item>@string/armor_09</item>
+	    <item>@string/armor_10</item>
+	    <item>@string/armor_11</item>
+	    <item>@string/armor_12</item>
+	    <item>@string/armor_13</item>
+	    <item>@string/armor_14</item>
+	    <item>@string/armor_15</item>
+	    <item>@string/armor_16</item>
+	    <item>@string/armor_17</item>
+	    <item>@string/armor_18</item>
+	    <item>@string/armor_19</item>
+	    <item>@string/armor_20</item>
+	    <item>@string/armor_21</item>
+	    <item>@string/armor_22</item>
+	    <item>@string/armor_23</item>
+	    <item>@string/armor_24</item>
+	    <item>@string/armor_25</item>
+	    <item>@string/armor_26</item>
+	    <item>@string/armor_27</item>
+	    <item>@string/armor_28</item>
+	    <item>@string/armor_29</item>
+	    <item>@string/armor_30</item>
+    </string-array>
+    <string-array name="new_armor_array">
+        <item>@string/armor_01</item>
+	    <item>@string/armor_02</item>
+	    <item>@string/armor_03</item>
+	    <item>@string/armor_04</item>
+	    <item>@string/armor_05</item>
+	    <item>@string/armor_06</item>
+	    <item>@string/armor_07</item>
+	    <item>@string/armor_08</item>
+	    <item>@string/armor_09</item>
+	    <item>@string/armor_10</item>
+	    <item>@string/armor_11</item>
+	    <item>@string/armor_12</item>
+	    <item>@string/armor_13</item>
+	    <item>@string/armor_14</item>
+	    <item>@string/armor_15</item>
+	    <item>@string/armor_16</item>
+	    <item>@string/armor_17</item>
+	    <item>@string/armor_18</item>
+	    <item>@string/armor_19</item>
+	    <item>@string/armor_20</item>
+	    <item>@string/armor_21</item>
+	    <item>@string/armor_22</item>
+	    <item>@string/armor_23</item>
+	    <item>@string/armor_24</item>
+	    <item>@string/armor_25</item>
+	    <item>@string/armor_26</item>
+	    <item>@string/armor_27</item>
+	    <item>@string/armor_28</item>
+	    <item>@string/armor_29</item>
+	    <item>@string/armor_30</item>
+    </string-array>
+    
+	<string-array name="item_array">
+	    <item>@string/cards_remove_card</item>
+        <item>@string/item_01</item>
+	    <item>@string/item_02</item>
+	    <item>@string/item_03</item>
+	    <item>@string/item_04</item>
+	    <item>@string/item_05</item>
+	    <item>@string/item_06</item>
+	    <item>@string/item_07</item>
+	    <item>@string/item_08</item>
+	    <item>@string/item_09</item>
+	    <item>@string/item_10</item>
+	    <item>@string/item_11</item>
+	    <item>@string/item_12</item>
+	    <item>@string/item_13</item>
+	    <item>@string/item_14</item>
+	    <item>@string/item_15</item>
+	    <item>@string/item_16</item>
+	    <item>@string/item_17</item>
+	    <item>@string/item_18</item>
+	    <item>@string/item_19</item>
+	    <item>@string/item_20</item>
+	    <item>@string/item_21</item>
+	    <item>@string/item_22</item>
+	    <item>@string/item_23</item>
+	    <item>@string/item_24</item>
+	    <item>@string/item_25</item>
+	    <item>@string/item_26</item>
+	    <item>@string/item_27</item>
+	    <item>@string/item_28</item>
+	    <item>@string/item_29</item>
+	    <item>@string/item_30</item>
+	    <item>@string/item_31</item>
+	    <item>@string/item_32</item>
+	    <item>@string/item_33</item>
+	    <item>@string/item_34</item>
+	    <item>@string/item_35</item>
+	    <item>@string/item_36</item>
+	    <item>@string/item_37</item>
+	    <item>@string/item_38</item>
+	    <item>@string/item_39</item>
+	    <item>@string/item_40</item>
+	    <item>@string/item_41</item>
+	    <item>@string/item_42</item>
+	    <item>@string/item_43</item>
+	    <item>@string/item_44</item>
+	    <item>@string/item_45</item>
+	    <item>@string/item_46</item>
+	    <item>@string/item_47</item>
+	    <item>@string/item_48</item>
+	    <item>@string/item_49</item>
+	    <item>@string/item_50</item>
+	    <item>@string/item_51</item>
+	    <item>@string/item_52</item>
+	    <item>@string/item_53</item>
+	    <item>@string/item_54</item>
+	    <item>@string/item_55</item>
+	    <item>@string/item_56</item>
+	    <item>@string/item_57</item>
+	    <item>@string/item_58</item>
+	    <item>@string/item_59</item>
+	    <item>@string/item_60</item>
+	    <item>@string/item_61</item>
+	    <item>@string/item_62</item>
+	    <item>@string/item_63</item>
+	    <item>@string/item_64</item>
+	    <item>@string/item_65</item>
+    </string-array>
+    <string-array name="new_item_array">
+        <item>@string/item_01</item>
+	    <item>@string/item_02</item>
+	    <item>@string/item_03</item>
+	    <item>@string/item_04</item>
+	    <item>@string/item_05</item>
+	    <item>@string/item_06</item>
+	    <item>@string/item_07</item>
+	    <item>@string/item_08</item>
+	    <item>@string/item_09</item>
+	    <item>@string/item_10</item>
+	    <item>@string/item_11</item>
+	    <item>@string/item_12</item>
+	    <item>@string/item_13</item>
+	    <item>@string/item_14</item>
+	    <item>@string/item_15</item>
+	    <item>@string/item_16</item>
+	    <item>@string/item_17</item>
+	    <item>@string/item_18</item>
+	    <item>@string/item_19</item>
+	    <item>@string/item_20</item>
+	    <item>@string/item_21</item>
+	    <item>@string/item_22</item>
+	    <item>@string/item_23</item>
+	    <item>@string/item_24</item>
+	    <item>@string/item_25</item>
+	    <item>@string/item_26</item>
+	    <item>@string/item_27</item>
+	    <item>@string/item_28</item>
+	    <item>@string/item_29</item>
+	    <item>@string/item_30</item>
+	    <item>@string/item_31</item>
+	    <item>@string/item_32</item>
+	    <item>@string/item_33</item>
+	    <item>@string/item_34</item>
+	    <item>@string/item_35</item>
+	    <item>@string/item_36</item>
+	    <item>@string/item_37</item>
+	    <item>@string/item_38</item>
+	    <item>@string/item_39</item>
+	    <item>@string/item_40</item>
+	    <item>@string/item_41</item>
+	    <item>@string/item_42</item>
+	    <item>@string/item_43</item>
+	    <item>@string/item_44</item>
+	    <item>@string/item_45</item>
+	    <item>@string/item_46</item>
+	    <item>@string/item_47</item>
+	    <item>@string/item_48</item>
+	    <item>@string/item_49</item>
+	    <item>@string/item_50</item>
+	    <item>@string/item_51</item>
+	    <item>@string/item_52</item>
+	    <item>@string/item_53</item>
+	    <item>@string/item_54</item>
+	    <item>@string/item_55</item>
+	    <item>@string/item_56</item>
+	    <item>@string/item_57</item>
+	    <item>@string/item_58</item>
+	    <item>@string/item_59</item>
+	    <item>@string/item_60</item>
+	    <item>@string/item_61</item>
+	    <item>@string/item_62</item>
+	    <item>@string/item_63</item>
+	    <item>@string/item_64</item>
+	    <item>@string/item_65</item>
+    </string-array>
+    
+    <string-array name="ally_array">
+	    <item>@string/cards_remove_card</item>
+        <item>@string/ally_01</item>
+	    <item>@string/ally_02</item>
+	    <item>@string/ally_03</item>
+	    <item>@string/ally_04</item>
+	    <item>@string/ally_05</item>
+	    <item>@string/ally_06</item>
+	    <item>@string/ally_07</item>
+	    <item>@string/ally_08</item>
+	    <item>@string/ally_09</item>
+	    <item>@string/ally_10</item>
+	    <item>@string/ally_11</item>
+	    <item>@string/ally_12</item>
+	    <item>@string/ally_13</item>
+	    <item>@string/ally_14</item>
+	    <item>@string/ally_15</item>
+	    <item>@string/ally_16</item>
+	    <item>@string/ally_17</item>
+	    <item>@string/ally_18</item>
+	    <item>@string/ally_19</item>
+	    <item>@string/ally_20</item>
+	    <item>@string/ally_21</item>
+	    <item>@string/ally_22</item>
+	    <item>@string/ally_23</item>
+	    <item>@string/ally_24</item>
+	    <item>@string/ally_25</item>
+	    <item>@string/ally_26</item>
+	    <item>@string/ally_27</item>
+	    <item>@string/ally_28</item>
+	    <item>@string/ally_29</item>
+	    <item>@string/ally_30</item>
+	    <item>@string/ally_31</item>
+	    <item>@string/ally_32</item>
+	    <item>@string/ally_33</item>
+	    <item>@string/ally_34</item>
+	    <item>@string/ally_35</item>
+	    <item>@string/ally_36</item>
+	    <item>@string/ally_37</item>
+	    <item>@string/ally_38</item>
+	    <item>@string/ally_39</item>
+	    <item>@string/ally_40</item>
+	    <item>@string/ally_41</item>
+	    <item>@string/ally_42</item>
+	    <item>@string/ally_43</item>
+	    <item>@string/ally_44</item>
+	    <item>@string/ally_45</item>
+	    <item>@string/ally_46</item>
+	    <item>@string/ally_47</item>
+	    <item>@string/ally_48</item>
+	    <item>@string/ally_49</item>
+	    <item>@string/ally_50</item>
+	    <item>@string/ally_51</item>
+	    <item>@string/ally_52</item>
+	    <item>@string/ally_53</item>
+    </string-array>
+    <string-array name="new_ally_array">
+        <item>@string/ally_01</item>
+	    <item>@string/ally_02</item>
+	    <item>@string/ally_03</item>
+	    <item>@string/ally_04</item>
+	    <item>@string/ally_05</item>
+	    <item>@string/ally_06</item>
+	    <item>@string/ally_07</item>
+	    <item>@string/ally_08</item>
+	    <item>@string/ally_09</item>
+	    <item>@string/ally_10</item>
+	    <item>@string/ally_11</item>
+	    <item>@string/ally_12</item>
+	    <item>@string/ally_13</item>
+	    <item>@string/ally_14</item>
+	    <item>@string/ally_15</item>
+	    <item>@string/ally_16</item>
+	    <item>@string/ally_17</item>
+	    <item>@string/ally_18</item>
+	    <item>@string/ally_19</item>
+	    <item>@string/ally_20</item>
+	    <item>@string/ally_21</item>
+	    <item>@string/ally_22</item>
+	    <item>@string/ally_23</item>
+	    <item>@string/ally_24</item>
+	    <item>@string/ally_25</item>
+	    <item>@string/ally_26</item>
+	    <item>@string/ally_27</item>
+	    <item>@string/ally_28</item>
+	    <item>@string/ally_29</item>
+	    <item>@string/ally_30</item>
+	    <item>@string/ally_31</item>
+	    <item>@string/ally_32</item>
+	    <item>@string/ally_33</item>
+	    <item>@string/ally_34</item>
+	    <item>@string/ally_35</item>
+	    <item>@string/ally_36</item>
+	    <item>@string/ally_37</item>
+	    <item>@string/ally_38</item>
+	    <item>@string/ally_39</item>
+	    <item>@string/ally_40</item>
+	    <item>@string/ally_41</item>
+	    <item>@string/ally_42</item>
+	    <item>@string/ally_43</item>
+	    <item>@string/ally_44</item>
+	    <item>@string/ally_45</item>
+	    <item>@string/ally_46</item>
+	    <item>@string/ally_47</item>
+	    <item>@string/ally_48</item>
+	    <item>@string/ally_49</item>
+	    <item>@string/ally_50</item>
+	    <item>@string/ally_51</item>
+	    <item>@string/ally_52</item>
+	    <item>@string/ally_53</item>
+    </string-array>
+    
+    <string-array name="blessing_array">
+	    <item>@string/cards_remove_card</item>
+        <item>@string/blessing_01</item>
+	    <item>@string/blessing_02</item>
+	    <item>@string/blessing_03</item>
+	    <item>@string/blessing_04</item>
+	    <item>@string/blessing_05</item>
+	    <item>@string/blessing_06</item>
+	    <item>@string/blessing_07</item>
+	    <item>@string/blessing_08</item>
+	    <item>@string/blessing_09</item>
+	    <item>@string/blessing_10</item>
+	    <item>@string/blessing_11</item>
+	    <item>@string/blessing_12</item>
+	    <item>@string/blessing_13</item>
+	    <item>@string/blessing_14</item>
+	    <item>@string/blessing_15</item>
+	    <item>@string/blessing_16</item>
+	    <item>@string/blessing_17</item>
+    </string-array>
+    <string-array name="new_blessing_array">
+        <item>@string/blessing_01</item>
+	    <item>@string/blessing_02</item>
+	    <item>@string/blessing_03</item>
+	    <item>@string/blessing_04</item>
+	    <item>@string/blessing_05</item>
+	    <item>@string/blessing_06</item>
+	    <item>@string/blessing_07</item>
+	    <item>@string/blessing_08</item>
+	    <item>@string/blessing_09</item>
+	    <item>@string/blessing_10</item>
+	    <item>@string/blessing_11</item>
+	    <item>@string/blessing_12</item>
+	    <item>@string/blessing_13</item>
+	    <item>@string/blessing_14</item>
+	    <item>@string/blessing_15</item>
+	    <item>@string/blessing_16</item>
+	    <item>@string/blessing_17</item>
+    </string-array>
+    
+    <string-array name="classes_amiri">
+        <item>@string/class_amiri_base</item>
+        <item>@string/class_amiri_1</item>
+        <item>@string/class_amiri_2</item>
+    </string-array>
+    <string-array name="classes_ezren">
+        <item>@string/class_ezren_base</item>
+        <item>@string/class_ezren_1</item>
+        <item>@string/class_ezren_2</item>
+    </string-array>
+    <string-array name="classes_harsk">
+        <item>@string/class_harsk_base</item>
+        <item>@string/class_harsk_1</item>
+        <item>@string/class_harsk_2</item>
+    </string-array>
+    <string-array name="classes_kyra">
+        <item>@string/class_kyra_base</item>
+        <item>@string/class_kyra_1</item>
+        <item>@string/class_kyra_2</item>
+    </string-array>
+    <string-array name="classes_lem">
+        <item>@string/class_lem_base</item>
+        <item>@string/class_lem_1</item>
+        <item>@string/class_lem_2</item>
+    </string-array>
+    <string-array name="classes_lini">
+        <item>@string/class_lini_base</item>
+        <item>@string/class_lini_1</item>
+        <item>@string/class_lini_2</item>
+    </string-array>
+    <string-array name="classes_merisiel">
+        <item>@string/class_merisiel_base</item>
+        <item>@string/class_merisiel_1</item>
+        <item>@string/class_merisiel_2</item>
+    </string-array>
+    <string-array name="classes_sajan">
+        <item>@string/class_sajan_base</item>
+        <item>@string/class_sajan_1</item>
+        <item>@string/class_sajan_2</item>
+    </string-array>
+    <string-array name="classes_seelah">
+        <item>@string/class_seelah_base</item>
+        <item>@string/class_seelah_1</item>
+        <item>@string/class_seelah_2</item>
+    </string-array>
+    <string-array name="classes_seoni">
+        <item>@string/class_seoni_base</item>
+        <item>@string/class_seoni_1</item>
+        <item>@string/class_seoni_2</item>
+    </string-array>
+    <string-array name="classes_valeros">
+        <item>@string/class_valeros_base</item>
+        <item>@string/class_valeros_1</item>
+        <item>@string/class_valeros_2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_adventurer"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/add_adventurer" />
+    
+    <item
+        android:id="@+id/menu_delete_party"
+        android:orderInCategory="150"
+        android:showAsAction="never"
+        android:title="@string/menu_delete_party"/>
+    
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/menu_about"/>
+
+</menu>
+<!-- From: file:/C:/Users/Cal/StudioProjects/PACGCharacterTracker2.0/app/src/main/res/menu/adventurers.xml -->

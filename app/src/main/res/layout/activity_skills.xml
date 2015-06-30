@@ -1,0 +1,207 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SkillsPage" >
+    
+    <RelativeLayout 
+        android:id="@+id/relative_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+		<!-- Strength -->
+        <LinearLayout 
+            android:id="@+id/str_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+	        <!-- Standard Skill -->
+		    <TextView
+		        android:id="@+id/str_word"
+		        android:textSize="20sp"
+		        android:layout_width="200sp"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/skill_str" />
+		    <Button
+		        android:id="@+id/str_skill"
+		        style="@style/Skills_Page_Buttons"
+		        android:onClick="strClick"/>
+		</LinearLayout>
+		<LinearLayout
+            android:id="@+id/str_bonus"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_below="@id/str_layout" />
+	    
+	    <View 
+	        android:id="@+id/hr1"
+	        android:layout_marginBottom="10sp"
+	        android:layout_below="@id/str_bonus"
+	        style="@style/Light_Divider"/>
+	    
+		<!-- Dexterity -->
+	    <LinearLayout 
+            android:id="@+id/dex_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hr1" >
+		    
+	        <!-- Standard Skill -->
+		    <TextView
+		        android:id="@+id/dex_word"
+		        android:textSize="20sp"
+		        android:layout_width="200sp"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/skill_dex" />
+		    <Button
+		        android:id="@+id/dex_skill"
+		        style="@style/Skills_Page_Buttons"
+		        android:onClick="dexClick"/>
+		</LinearLayout>
+	    <LinearLayout
+            android:id="@+id/dex_bonus"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_below="@id/dex_layout" />
+	
+	    <View 
+	        android:id="@+id/hr2"
+	        android:layout_marginBottom="10sp"
+	        android:layout_below="@id/dex_bonus"
+	        style="@style/Light_Divider"/>
+	    
+		<!-- Constitution -->
+	    <LinearLayout 
+            android:id="@+id/con_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hr2" >
+	    
+	        <!-- Standard Skill -->
+		    <TextView
+		        android:id="@+id/con_word"
+		        android:textSize="20sp"
+		        android:layout_width="200sp"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/skill_con" />
+		    <Button
+		        android:id="@+id/con_skill"
+		        style="@style/Skills_Page_Buttons"
+		        android:onClick="conClick"/>
+	    </LinearLayout>
+	    <LinearLayout
+            android:id="@+id/con_bonus"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_below="@id/con_layout" />
+	    
+	    <View 
+	        android:id="@+id/hr3"
+	        android:layout_marginBottom="10sp"
+	        android:layout_below="@id/con_bonus"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Intelligence -->
+	    <LinearLayout 
+            android:id="@+id/int_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hr3" >
+	        <!-- Standard Skill -->
+		    <TextView
+		        android:id="@+id/int_word"
+		        android:textSize="20sp"
+		        android:layout_width="200sp"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/skill_int" />
+		    <Button
+		        android:id="@+id/int_skill"
+		        style="@style/Skills_Page_Buttons"
+		        android:onClick="intClick"/>
+	    </LinearLayout>
+	    <LinearLayout
+            android:id="@+id/int_bonus"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_below="@id/int_layout" />
+	    
+	    <View 
+	        android:id="@+id/hr4"
+	        android:layout_marginBottom="10sp"
+	        android:layout_below="@id/int_bonus"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Wisdom -->
+	    <LinearLayout 
+            android:id="@+id/wis_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hr4" >
+		    
+	        <!-- Standard Skill -->
+		    <TextView
+		        android:id="@+id/wis_word"
+		        android:textSize="20sp"
+		        android:layout_width="200sp"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/skill_wis" />
+		    <Button
+		        android:id="@+id/wis_skill"
+		        style="@style/Skills_Page_Buttons"
+		        android:onClick="wisClick"/>
+	    </LinearLayout>
+	    <LinearLayout
+            android:id="@+id/wis_bonus"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_below="@id/wis_layout" />
+	    
+	    <View 
+	        android:id="@+id/hr5"
+	        android:layout_marginBottom="10sp"
+	        android:layout_below="@id/wis_bonus"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Charisma -->
+	    <LinearLayout 
+            android:id="@+id/cha_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hr5" >
+		    
+	        <!-- Standard Skill -->
+		    <TextView
+		        android:id="@+id/cha_Word"
+		        android:textSize="20sp"
+		        android:layout_width="200sp"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/skill_cha" />
+		    <Button
+		        android:id="@+id/cha_skill"
+		        style="@style/Skills_Page_Buttons"
+		        android:onClick="chaClick"/>		    
+		</LinearLayout>
+	    <LinearLayout
+            android:id="@+id/cha_bonus"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_below="@id/cha_layout" />
+	    
+	</RelativeLayout>
+</ScrollView>

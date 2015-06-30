@@ -1,0 +1,209 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PowersPage" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+	    <Button
+            android:id="@+id/name_and_class"
+	        android:layout_height="25sp"
+            android:layout_width="fill_parent"   
+	        android:background="@android:color/transparent"    
+	        android:textSize="20sp"
+	        android:layout_gravity="center"
+	        android:onClick="chooseClass" />
+	    
+	    <View 
+	        android:id="@+id/hr0"
+	        android:layout_below="@id/name_and_class"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        style="@style/Light_Divider"/>
+        
+	    <!-- Hand Size -->
+	    <LinearLayout
+	        android:id="@+id/hand_size_layout"
+	        android:layout_below="@id/hr0"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25sp">
+		    <TextView
+		        android:id="@+id/hand_size_word"
+		        android:textSize="20sp"
+		        android:layout_width="200sp"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:text="@string/hand_size" />
+		    <Button
+		        android:id="@+id/number"
+		        android:textSize="20sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:onClick="updateHandCount"
+		        android:background="@android:color/transparent"/>
+		</LinearLayout>
+	    
+	    <View 
+	        android:id="@+id/hr1"
+	        android:layout_below="@id/hand_size_layout"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        style="@style/Light_Divider"/>
+	    
+	    <LinearLayout 
+	        android:id="@+id/prof_list"
+	        android:layout_below="@id/hr1"
+	        android:orientation="vertical"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+		    <TextView 
+		        android:id="@+id/prof_word"
+		        android:textSize="20sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"
+		        android:textStyle="bold"
+		        android:text="@string/prof_word" />
+		    <Button
+		        android:id="@+id/prof_light"
+		        android:textSize="20sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:visibility="gone"
+		        android:text="@string/prof_light"
+		        android:onClick="setLightArmor" />
+		    <Button
+		        android:id="@+id/prof_heavy"
+		        android:textSize="20sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:visibility="gone"
+		        android:text="@string/prof_heavy"
+		        android:onClick="setHeavyArmor" />
+		    <Button
+		        android:id="@+id/prof_weapon"
+		        android:textSize="20sp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:visibility="gone"
+		        android:text="@string/prof_weapon"
+		        android:onClick="setWeapon" />
+	    </LinearLayout>
+	    <View 
+	        android:id="@+id/hr2"
+	        android:layout_below="@id/prof_list"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        android:visibility="gone"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Power 1 -->
+	    <Button
+	        android:id="@+id/power1"
+	        android:layout_below="@id/hr2"
+	        style="@style/Powers_Page_Buttons"/>
+	    
+	    <View 
+	        android:id="@+id/hr3"
+	        android:layout_below="@id/power1"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Power 2-->
+	    <Button
+	        android:id="@+id/power2"
+	        android:layout_below="@id/hr3"
+	        style="@style/Powers_Page_Buttons"/>
+	    
+	    <View 
+	        android:id="@+id/hr4"
+	        android:layout_below="@id/power2"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Power 3-->
+	    <Button
+	        android:id="@+id/power3"
+	        android:layout_below="@id/hr4"
+	        android:visibility="gone"
+	        style="@style/Powers_Page_Buttons"/>
+	    
+	    <View 
+	        android:id="@+id/hr5"
+	        android:layout_below="@id/power3"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        android:visibility="gone"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Power 4-->
+	    <Button
+	        android:id="@+id/power4"
+	        android:layout_below="@id/hr5"
+	        style="@style/Powers_Page_Buttons"/>
+	    
+	    <View 
+	        android:id="@+id/hr6"
+	        android:layout_below="@id/power4"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        android:visibility="gone"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Power 5-->
+	    <Button
+	        android:id="@+id/power5"
+	        android:layout_below="@id/hr6"
+	        style="@style/Powers_Page_Buttons"/>
+	    
+	    <View 
+	        android:id="@+id/hr7"
+	        android:layout_below="@id/power5"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        android:visibility="gone"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Power 6-->
+	    <Button
+	        android:id="@+id/power6"
+	        android:layout_below="@id/hr7"
+	        style="@style/Powers_Page_Buttons"/>
+	    
+	    <View 
+	        android:id="@+id/hr8"
+	        android:layout_below="@id/power6"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        android:visibility="gone"
+	        style="@style/Light_Divider"/>
+	    
+	    <!-- Power 7-->
+	    <Button
+	        android:id="@+id/power7"
+	        android:layout_below="@id/hr8"
+	        style="@style/Powers_Page_Buttons"/>
+	    
+	    <View 
+	        android:id="@+id/hr9"
+	        android:layout_below="@id/power7"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="10sp"
+	        android:visibility="gone"
+	        style="@style/Light_Divider"/>
+	
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,87 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="Dark_Divider">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">1sp</item>
+	    <item name="android:background">#FF000000</item>
+    </style>
+    
+    <style name="Light_Divider">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">1sp</item>
+	    <item name="android:background">#D0D0D0</item>
+    </style>
+    
+    <style name="Skills_Page_Buttons">
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:background">@android:color/transparent</item>        
+	    <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="Powers_Page_Buttons">
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:background">@android:color/transparent</item>  
+	    <item name="android:visibility">gone</item>      
+	    <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="Scenario_List_Heading">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">10sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Scenario_List_Items">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">20sp</item>
+        <item name="android:layout_marginBottom">10sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">left</item>
+    </style>
+    
+    <style name="Deck_List_Names">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">200sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Deck_List_Counts">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">left</item>
+        <item name="android:layout_marginBottom">10sp</item>
+    </style>
+    
+    <style name="AlertDialogTheme" parent="android:Theme.Dialog">
+	    <item name="android:textSize">15sp</item>
+	</style>
+
+</resources>
