@@ -204,4 +204,4 @@
 	        android:layout_below="@id/cha_layout" />
 	    
 	</RelativeLayout>
-</ScrollView><!-- From: file:/C:/Users/Cal/StudioProjects/PACGCharacterTracker2.0/app/src/main/res/layout/activity_skills.xml -->
+</ScrollView><!-- From: file:/C:/Users/Cal/Documents/GitHub/pacg-char-tracker/app/src/main/res/layout/activity_skills.xml -->
