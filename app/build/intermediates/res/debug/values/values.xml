@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Cal/StudioProjects/PACGCharacterTracker2.0/app/src/main/res/values/array.xml -->
+    <!-- From: file:/C:/Users/Cal/Documents/GitHub/pacg-char-tracker/app/src/main/res/values/array.xml -->
     <eat-comment/>
     <string-array name="ally_array">
 	    <item>@string/cards_remove_card</item>
@@ -1313,11 +1313,11 @@
     	<item>1</item>
     	<item>2</item>
     </string-array>
-    <!-- From: file:/C:/Users/Cal/StudioProjects/PACGCharacterTracker2.0/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Cal/Documents/GitHub/pacg-char-tracker/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Cal/StudioProjects/PACGCharacterTracker2.0/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Cal/Documents/GitHub/pacg-char-tracker/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="add_adventurer">Add Player</string>
@@ -2014,7 +2014,7 @@
     <string name="weapon_59">War Razor +1</string>
     <string name="weapon_60">Warhammer</string>
     <string name="weapon_61">Warhammer +1</string>
-    <!-- From: file:/C:/Users/Cal/StudioProjects/PACGCharacterTracker2.0/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Cal/Documents/GitHub/pacg-char-tracker/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AlertDialogTheme" parent="android:Theme.Dialog">
 	    <item name="android:textSize">15sp</item>

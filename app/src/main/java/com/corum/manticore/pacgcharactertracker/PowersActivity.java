@@ -1336,7 +1336,8 @@ public class PowersActivity extends Activity {
 			case 0: 
 				db.updatePower(powers_id, 6, 0); 
 				if(powerData[1] == 2){ db.updatePower(powers_id, 8, 0);} break;
-			case 1: this.powerData[5] = 1;
+			case 1:
+				db.updatePower(powers_id, 6, 1);
 				if(powerData[1] == 2){ db.updatePower(powers_id, 8, 0);} break;
 			case 2: 
 				db.updatePower(powers_id, 6, 1);
