@@ -1166,8 +1166,6 @@ public class PowersActivity extends Activity {
 			if(this.powerData[11] > 0){ power3 += " " + getString(R.string.power_kyra_1_3_upg_10);}
 			else{ power3 += " " + getString(R.string.power_kyra_1_3_upg_9_base_2);}
 			power3 += " " + getString(R.string.power_kyra_1_3_upg_9_base_3);
-			if(powerData[1] == 1 && powerData[9] > 0){ power3 += " " + getString(R.string.power_kyra_1_1_upg_8);}
-			else{ power3 += " " + getString(R.string.power_kyra_02_1_base_4);}
 			button = (Button) findViewById(R.id.power3);
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
@@ -1214,7 +1212,7 @@ public class PowersActivity extends Activity {
 			
 			// Power 4
 			String power4 = getString(R.string.power_kyra_12_4_base_1);
-			if(powerData[13] > 0){ power4 += " " + getString(R.string.power_kyra_2_4_upg_10);}
+			if(powerData[12] > 0){ power4 += " " + getString(R.string.power_kyra_2_4_upg_10);}
 			power4 += " " + getString(R.string.power_kyra_12_4_base_2);
 			button = (Button) findViewById(R.id.power4);
 			button.setVisibility(View.VISIBLE);
@@ -1222,7 +1220,7 @@ public class PowersActivity extends Activity {
 			button.setOnClickListener(kyr_listener);
 			view = (View) findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
-			if(this.powerData[13] == 0){ 
+			if(this.powerData[11] == 0){
 				button.setTextColor(Color.GRAY);
 				button.setTypeface(null, Typeface.ITALIC);
 				button.setTextSize(this.smallText);}
