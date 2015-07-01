@@ -25,4 +25,4 @@ proguard/
 *.iml
 .idea/
 .gradle/
-build/
+app/build/
