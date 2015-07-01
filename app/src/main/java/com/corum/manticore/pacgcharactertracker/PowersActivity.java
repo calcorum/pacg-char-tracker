@@ -1212,7 +1212,7 @@ public class PowersActivity extends Activity {
 			
 			// Power 4
 			String power4 = getString(R.string.power_kyra_12_4_base_1);
-			if(powerData[12] > 0){ power4 += " " + getString(R.string.power_kyra_2_4_upg_10);}
+			if(powerData[11] > 0){ power4 += " " + getString(R.string.power_kyra_2_4_upg_10);}
 			power4 += " " + getString(R.string.power_kyra_12_4_base_2);
 			button = (Button) findViewById(R.id.power4);
 			button.setVisibility(View.VISIBLE);
@@ -1220,7 +1220,7 @@ public class PowersActivity extends Activity {
 			button.setOnClickListener(kyr_listener);
 			view = (View) findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
-			if(this.powerData[11] == 0){
+			if(this.powerData[10] == 0){
 				button.setTextColor(Color.GRAY);
 				button.setTypeface(null, Typeface.ITALIC);
 				button.setTextSize(this.smallText);}
