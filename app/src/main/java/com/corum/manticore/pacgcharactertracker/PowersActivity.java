@@ -27,7 +27,7 @@ public class PowersActivity extends Activity {
 	private int skills_id;
 	private String charName;
 	private int[] powerData;
-	private int smallText = 15;
+	private final int smallText = 15;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -151,7 +151,7 @@ public class PowersActivity extends Activity {
 		button.setLayoutParams(params);
 		button.setVisibility(View.VISIBLE);
 		button.setOnClickListener(null);
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -205,7 +205,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(ami_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -218,7 +218,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(ami_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -235,7 +235,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(ami_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -251,7 +251,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(ami_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -264,7 +264,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(ami_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -273,7 +273,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener ami_listener = new OnClickListener(){
+	private final OnClickListener ami_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -352,7 +352,7 @@ public class PowersActivity extends Activity {
 		}
 	};
 	
-	public void updatePowerAmiri(int power, int which){
+	private void updatePowerAmiri(int power, int which){
 		switch(power){
 		case R.id.power1:
 			if(powerData[1] == 0){
@@ -518,7 +518,7 @@ public class PowersActivity extends Activity {
 		button.setVisibility(View.VISIBLE);
 		button.setText(power3);
 		button.setOnClickListener(ezr_listener);
-		View view = (View) findViewById(R.id.hr5);
+		View view = findViewById(R.id.hr5);
 		view.setVisibility(View.VISIBLE);
 		if(this.powerData[4] == 0){ 
 			button.setTextColor(Color.GRAY);
@@ -537,7 +537,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(ezr_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -553,7 +553,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(ezr_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -569,7 +569,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(ezr_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -587,7 +587,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(ezr_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0 && this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -600,7 +600,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power6);
 			button.setOnClickListener(ezr_listener);
-			view = (View) findViewById(R.id.hr8);
+			view = findViewById(R.id.hr8);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -609,7 +609,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener ezr_listener = new OnClickListener(){
+	private final OnClickListener ezr_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -683,7 +683,7 @@ public class PowersActivity extends Activity {
 		}
 	};
 
-	public void updatePowerEzren(int power, int which){
+	private void updatePowerEzren(int power, int which){
 		switch(power){
 		case R.id.power1:
 			switch(which){
@@ -793,7 +793,7 @@ public class PowersActivity extends Activity {
 		button.setLayoutParams(params);
 		button.setVisibility(View.VISIBLE);
 		button.setOnClickListener(null);
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -842,7 +842,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -854,7 +854,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -866,7 +866,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -878,7 +878,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power6);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr8);
+			view = findViewById(R.id.hr8);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -896,7 +896,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -910,7 +910,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -923,7 +923,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -936,7 +936,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power6);
 			button.setOnClickListener(har_listener);
-			view = (View) findViewById(R.id.hr8);
+			view = findViewById(R.id.hr8);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -945,7 +945,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener har_listener = new OnClickListener(){
+	private final OnClickListener har_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -1119,7 +1119,7 @@ public class PowersActivity extends Activity {
 			button.setTextColor(Color.GRAY);
 			button.setTypeface(null, Typeface.ITALIC);
 			button.setTextSize(this.smallText);}
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -1170,7 +1170,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(kyr_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1184,7 +1184,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(kyr_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1202,7 +1202,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(kyr_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[8] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1218,7 +1218,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(kyr_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){
 				button.setTextColor(Color.GRAY);
@@ -1233,7 +1233,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(kyr_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1243,7 +1243,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener kyr_listener = new OnClickListener(){
+	private final OnClickListener kyr_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -1428,7 +1428,7 @@ public class PowersActivity extends Activity {
 			button.setTextColor(Color.GRAY);
 			button.setTypeface(null, Typeface.ITALIC);
 			button.setTextSize(this.smallText);}
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -1475,7 +1475,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(lem_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1489,7 +1489,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(lem_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1502,7 +1502,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(lem_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1521,7 +1521,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(lem_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1535,7 +1535,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(lem_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1548,7 +1548,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(lem_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1557,7 +1557,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener lem_listener = new OnClickListener(){
+	private final OnClickListener lem_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -1755,7 +1755,7 @@ public class PowersActivity extends Activity {
 			button.setTextColor(Color.GRAY);
 			button.setTypeface(null, Typeface.ITALIC);
 			button.setTextSize(this.smallText);}
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -1809,7 +1809,7 @@ public class PowersActivity extends Activity {
 		button.setVisibility(View.VISIBLE);
 		button.setText(power3);
 		if(powerData[1] == 1){ button.setOnClickListener(lin_listener);}
-		view = (View) findViewById(R.id.hr5);
+		view = findViewById(R.id.hr5);
 		view.setVisibility(View.VISIBLE);
 
 		// Check for Role 1 - Shapeshifter
@@ -1823,7 +1823,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(lin_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1836,7 +1836,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(lin_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1855,7 +1855,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(lin_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1868,7 +1868,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(lin_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1881,7 +1881,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power6);
 			button.setOnClickListener(lin_listener);
-			view = (View) findViewById(R.id.hr8);
+			view = findViewById(R.id.hr8);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -1890,7 +1890,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener lin_listener = new OnClickListener(){
+	private final OnClickListener lin_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -1971,7 +1971,7 @@ public class PowersActivity extends Activity {
 		}
 	};
 	
-	public void updatePowerLini(int power, int which){
+	private void updatePowerLini(int power, int which){
 		switch(power){
 		case R.id.power2:
 			if(powerData[1] == 0){
@@ -2122,7 +2122,7 @@ public class PowersActivity extends Activity {
 			button.setTextColor(Color.GRAY);
 			button.setTypeface(null, Typeface.ITALIC);
 			button.setTextSize(this.smallText);}
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -2175,7 +2175,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(mer_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2191,7 +2191,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(mer_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2204,7 +2204,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(mer_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2219,7 +2219,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(mer_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[8] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2236,7 +2236,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(mer_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2249,7 +2249,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(mer_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2262,7 +2262,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power6);
 			button.setOnClickListener(mer_listener);
-			view = (View) findViewById(R.id.hr8);
+			view = findViewById(R.id.hr8);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2271,7 +2271,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 
-	private OnClickListener mer_listener = new OnClickListener(){
+	private final OnClickListener mer_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -2362,7 +2362,7 @@ public class PowersActivity extends Activity {
 		}
 	};
 
-	public void updatePowerMerisiel(int power, int which){
+	private void updatePowerMerisiel(int power, int which){
 		switch(power){
 		case R.id.power1:
 			switch(which){
@@ -2506,7 +2506,7 @@ public class PowersActivity extends Activity {
 		// Weapons
 		button = (Button) findViewById(R.id.prof_weapon);
 		button.setLayoutParams(params);
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		if(powerData[1] > 0){
 			if(this.powerData[16] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2554,7 +2554,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[8] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2567,7 +2567,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2580,7 +2580,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2593,7 +2593,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power6);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr8);
+			view = findViewById(R.id.hr8);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2610,7 +2610,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[8] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2623,7 +2623,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2639,7 +2639,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2652,7 +2652,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power6);
 			button.setOnClickListener(saj_listener);
-			view = (View) findViewById(R.id.hr8);
+			view = findViewById(R.id.hr8);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2661,7 +2661,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener saj_listener = new OnClickListener(){
+	private final OnClickListener saj_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -2733,7 +2733,7 @@ public class PowersActivity extends Activity {
 		}
 	};
 	
-	public void updatePowerSajan(int power, int which){
+	private void updatePowerSajan(int power, int which){
 		switch(power){
 		case R.id.power1:
 			switch(which){
@@ -2774,7 +2774,7 @@ public class PowersActivity extends Activity {
 				case 0:
 					db.updatePower(powers_id, 12, 0); break;
 				case 1:
-					db.updatePower(powers_id, 12, 1);; break;
+					db.updatePower(powers_id, 12, 1); break;
 				}
 			}else{
 				switch(which){
@@ -2838,7 +2838,7 @@ public class PowersActivity extends Activity {
 		button.setLayoutParams(params);
 		button.setVisibility(View.VISIBLE);
 		button.setOnClickListener(null);
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -2894,7 +2894,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(see_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2907,7 +2907,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(see_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2922,7 +2922,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(see_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2937,7 +2937,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(see_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2952,7 +2952,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(see_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -2961,7 +2961,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener see_listener = new OnClickListener(){
+	private final OnClickListener see_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -3044,7 +3044,7 @@ public class PowersActivity extends Activity {
 		}
 	};
 	
-	public void updatePowerSeelah(int power, int which){
+	private void updatePowerSeelah(int power, int which){
 		switch(power){
 		case R.id.power1:
 			if(powerData[1] == 0){
@@ -3248,7 +3248,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(seo_listener);
-			View view = (View) findViewById(R.id.hr5);
+			View view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3260,7 +3260,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(seo_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[12] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3272,7 +3272,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(seo_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3288,7 +3288,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(seo_listener);
-			View view = (View) findViewById(R.id.hr5);
+			View view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3306,7 +3306,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(seo_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3319,7 +3319,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(seo_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3329,7 +3329,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener seo_listener = new OnClickListener(){
+	private final OnClickListener seo_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -3494,7 +3494,7 @@ public class PowersActivity extends Activity {
 		button.setLayoutParams(params);
 		button.setVisibility(View.VISIBLE);
 		button.setOnClickListener(null);
-		View view = (View) findViewById(R.id.hr2);
+		View view = findViewById(R.id.hr2);
 		view.setVisibility(View.VISIBLE);
 		
 		// Set Class/Role Name
@@ -3551,7 +3551,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(val_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[9] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3567,7 +3567,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(val_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3580,7 +3580,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(val_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3595,7 +3595,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power3);
 			button.setOnClickListener(val_listener);
-			view = (View) findViewById(R.id.hr5);
+			view = findViewById(R.id.hr5);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[10] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3611,7 +3611,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power4);
 			button.setOnClickListener(val_listener);
-			view = (View) findViewById(R.id.hr6);
+			view = findViewById(R.id.hr6);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[11] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3624,7 +3624,7 @@ public class PowersActivity extends Activity {
 			button.setVisibility(View.VISIBLE);
 			button.setText(power5);
 			button.setOnClickListener(val_listener);
-			view = (View) findViewById(R.id.hr7);
+			view = findViewById(R.id.hr7);
 			view.setVisibility(View.VISIBLE);
 			if(this.powerData[13] == 0){ 
 				button.setTextColor(Color.GRAY);
@@ -3633,7 +3633,7 @@ public class PowersActivity extends Activity {
 		}
 	}
 	
-	private OnClickListener val_listener = new OnClickListener(){
+	private final OnClickListener val_listener = new OnClickListener(){
 		@Override
 		public void onClick(View v) {
 			final int id = v.getId();
@@ -3712,7 +3712,7 @@ public class PowersActivity extends Activity {
 		}
 	};
 	
-	public void updatePowerValeros(int power, int which){
+	private void updatePowerValeros(int power, int which){
 		switch(power){
 		case R.id.power1:
 			if(powerData[1] == 0){
@@ -4113,7 +4113,7 @@ public class PowersActivity extends Activity {
 		dialog.show();
 	}
 	
-	public void refresh(){
+	private void refresh(){
 		Intent intent = getIntent();
 		overridePendingTransition(0, 0);
 	    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
