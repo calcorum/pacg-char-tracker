@@ -27,7 +27,7 @@ import android.util.Log;
 public class DatabaseHelper extends SQLiteOpenHelper{
 	
 	private Context context;
-	private static final int DATABASE_VERSION = 1;
+	private static final int DATABASE_VERSION = 2;
 	private static final String DATABASE_NAME = "pacgCharacterTracker";
 	
 	// Table names
@@ -234,14 +234,18 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
 		// on upgrade drop older tables
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_PARTY);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_ADVEN);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_CHAR);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_SKILL);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_POWER);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_SCEN);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_CARD);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_DECK);
+		if (newVersion == 2 && oldVersion == 1){
+
+		}else{
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_PARTY);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_ADVEN);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_CHAR);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_SKILL);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_POWER);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_SCEN);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_CARD);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_DECK);
+		}
 		
 		onCreate(db);
 	}
@@ -461,6 +465,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			c.moveToFirst();
 		
 		String name = c.getString(c.getColumnIndex(KEY_CHAR_NAME));
+		c.close();
 		return name;
 	}
 	
@@ -538,7 +543,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 	public void updateSkill(long skills_id, int which, int value){
 		SQLiteDatabase db = this.getReadableDatabase();
 		ContentValues cv = new ContentValues();
-		Log.e("Database Helper", "Skill ID: " + which + " New Value: " + value);
 		switch(which){
 		case 11:
 			cv.put(KEY_BONUS_5, value); break;
@@ -558,7 +562,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			cv.put(KEY_UPGR_6, value); break;
 		}
 		
-		db.update(TABLE_SKILL, cv, KEY_ID + " = ?", new String[] { String.valueOf(skills_id) });
+		db.update(TABLE_SKILL, cv, KEY_ID + " = ?", new String[]{String.valueOf(skills_id) });
 	}
 	
 	// Get a Skills Object
@@ -597,7 +601,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		s.setSkill(20,c.getInt(c.getColumnIndex(KEY_UPGR_4)));
 		s.setSkill(21,c.getInt(c.getColumnIndex(KEY_UPGR_5)));
 		s.setSkill(22,c.getInt(c.getColumnIndex(KEY_UPGR_6)));
-		
+
+		c.close();
 		return s;
 	}
 	
@@ -751,6 +756,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		p.setPower(16,c.getInt(c.getColumnIndex(KEY_PROF_2)));
 		p.setPower(17,c.getInt(c.getColumnIndex(KEY_PROF_3)));
 
+		c.close();
 		return p;
 	}
 	
@@ -849,6 +855,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		s.setScenario(6,4,c.getInt(c.getColumnIndex(KEY_SCEN_6_4)));
 		s.setScenario(6,5,c.getInt(c.getColumnIndex(KEY_SCEN_6_5)));
 
+		c.close();
 		return s;
 	}
 	
@@ -936,7 +943,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 		public void populateCardTable(SQLiteDatabase db){
 			int[] cardName = {R.string.weapon_01,R.string.weapon_02,R.string.weapon_03,R.string.weapon_04,R.string.weapon_05,R.string.weapon_06,R.string.weapon_07,R.string.weapon_08,R.string.weapon_09,R.string.weapon_10,R.string.weapon_11,R.string.weapon_12,R.string.weapon_13,R.string.weapon_14,R.string.weapon_15,R.string.weapon_16,R.string.weapon_17,R.string.weapon_18,R.string.weapon_19,R.string.weapon_20,R.string.weapon_21,R.string.weapon_22,R.string.weapon_23,R.string.weapon_24,R.string.weapon_25,R.string.weapon_26,R.string.weapon_27,R.string.weapon_28,R.string.weapon_29,
 					R.string.weapon_30,R.string.weapon_31,R.string.weapon_32,R.string.weapon_33,R.string.weapon_34,R.string.weapon_35,R.string.weapon_36,R.string.weapon_37,R.string.weapon_38,R.string.weapon_39,R.string.weapon_40,R.string.weapon_41,R.string.weapon_42,R.string.weapon_43,R.string.weapon_44,R.string.weapon_45,R.string.weapon_46,R.string.weapon_47,R.string.weapon_48,R.string.weapon_49,R.string.weapon_50,R.string.weapon_51,R.string.weapon_52,R.string.weapon_53,R.string.weapon_54,R.string.weapon_55,R.string.weapon_56,R.string.weapon_57,R.string.weapon_58,R.string.weapon_59,
-					R.string.weapon_60,R.string.weapon_61,R.string.spell_01,R.string.spell_02,R.string.spell_03,R.string.spell_04,R.string.spell_05,R.string.spell_06,R.string.spell_07,R.string.spell_08,R.string.spell_09,R.string.spell_10,R.string.spell_11,R.string.spell_12,R.string.spell_13,R.string.spell_14,R.string.spell_15,R.string.spell_16,R.string.spell_17,R.string.spell_18,R.string.spell_19,R.string.spell_20,R.string.spell_21,R.string.spell_22,R.string.spell_23,R.string.spell_24,R.string.spell_25,R.string.spell_26,R.string.spell_27,R.string.spell_28,R.string.spell_29,R.string.spell_30,
+					R.string.weapon_60,R.string.weapon_61,R.string.weapon_62,R.string.spell_01,R.string.spell_02,R.string.spell_03,R.string.spell_04,R.string.spell_05,R.string.spell_06,R.string.spell_07,R.string.spell_08,R.string.spell_09,R.string.spell_10,R.string.spell_11,R.string.spell_12,R.string.spell_13,R.string.spell_14,R.string.spell_15,R.string.spell_16,R.string.spell_17,R.string.spell_18,R.string.spell_19,R.string.spell_20,R.string.spell_21,R.string.spell_22,R.string.spell_23,R.string.spell_24,R.string.spell_25,R.string.spell_26,R.string.spell_27,R.string.spell_28,R.string.spell_29,R.string.spell_30,
 					R.string.spell_31,R.string.spell_32,R.string.spell_33,R.string.spell_34,R.string.spell_35,R.string.spell_36,R.string.spell_37,R.string.spell_38,R.string.spell_39,R.string.spell_40,R.string.spell_41,R.string.spell_42,R.string.spell_43,R.string.spell_44,R.string.spell_45,R.string.spell_46,R.string.spell_47,R.string.spell_48,R.string.spell_49,R.string.spell_50,R.string.armor_01,R.string.armor_02,R.string.armor_03,R.string.armor_04,R.string.armor_05,R.string.armor_06,R.string.armor_07,R.string.armor_08,R.string.armor_09,R.string.armor_10,R.string.armor_11,R.string.armor_12,
 					R.string.armor_13,R.string.armor_14,R.string.armor_15,R.string.armor_16,R.string.armor_17,R.string.armor_18,R.string.armor_19,R.string.armor_20,R.string.armor_21,R.string.armor_22,R.string.armor_23,R.string.armor_24,R.string.armor_25,R.string.armor_26,R.string.armor_27,R.string.armor_28,R.string.armor_29,R.string.armor_30,R.string.item_01,R.string.item_02,R.string.item_03,R.string.item_04,R.string.item_05,R.string.item_06,R.string.item_07,R.string.item_08,R.string.item_09,R.string.item_10,R.string.item_11,R.string.item_12,R.string.item_13,R.string.item_14,R.string.item_15,
 					R.string.item_16,R.string.item_17,R.string.item_18,R.string.item_19,R.string.item_20,R.string.item_21,R.string.item_22,R.string.item_23,R.string.item_24,R.string.item_25,R.string.item_26,R.string.item_27,R.string.item_28,R.string.item_29,R.string.item_30,R.string.item_31,R.string.item_32,R.string.item_33,R.string.item_34,R.string.item_35,R.string.item_36,R.string.item_37,R.string.item_38,R.string.item_39,R.string.item_40,R.string.item_41,R.string.item_42,R.string.item_43,R.string.item_44,R.string.item_45,R.string.item_46,R.string.item_47,R.string.item_48,R.string.item_49,
@@ -979,12 +986,12 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			values.put(KEY_CARD_NAME, name);
 			db.insert(TABLE_CARD, null, values);
 		}
-		
-		// Get a Card
-		public Card getCard(long card_id){
+
+	// Get a Card
+	public Card getCard(long card_id){
 			SQLiteDatabase db = this.getReadableDatabase();
-			
-			String selectQuery = "SELECT * FROM " + TABLE_CARD + " WHERE " 
+
+		String selectQuery = "SELECT * FROM " + TABLE_CARD + " WHERE "
 					+ KEY_ID + " = " + card_id;
 			Cursor c = db.rawQuery(selectQuery, null);
 			
@@ -996,6 +1003,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			card.setCardType(c.getInt(c.getColumnIndex(KEY_CARD_TYPE)));
 			card.setCardExpan(c.getInt(c.getColumnIndex(KEY_CARD_EXPAN)));
 			card.setCardName(c.getString(c.getColumnIndex(KEY_CARD_NAME)));
+
+			c.close();
 			return card;
 		}
 		
@@ -1022,21 +1031,21 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			return cards;
 		}
 		
-		// Create a Powers Object
+		// Create a Deck Object
 		public long createDeck(SQLiteDatabase db, long char_id){
 			int[] values = null;
 			
-			int[] amiValues = {33,34,39,49,49,128,141,173,183,229,251,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] ezrValues = {39,64,73,80,88,90,92,92,104,149,156,158,240,245,251,0,0,0,0,0,0,0,0,0,0};
-			int[] harValues = {7,29,29,47,47,128,144,159,185,220,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] kyrValues = {37,39,71,83,95,116,141,169,228,274,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] lemValues = {52,71,90,100,107,157,199,215,245,254,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] linValues = {71,71,73,83,100,107,177,191,220,222,222,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] merValues = {7,10,130,156,161,180,185,199,199,215,228,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] sajValues = {145,154,169,180,229,245,254,274,274,274,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] seeValues = {34,37,49,71,125,125,141,240,251,274,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] seoValues = {64,80,88,149,153,178,215,228,229,254,274,274,274,274,274,0,0,0,0,0,0,0,0,0,0};
-			int[] valValues = {7,34,34,37,49,116,141,141,173,183,240,251,274,274,274,0,0,0,0,0,0,0,0,0,0};
+			int[] amiValues = {34,35,40,50,50,129,142,174,184,230,252,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] ezrValues = {40,65,74,81,89,91,93,93,105,150,157,159,241,246,252,0,0,0,0,0,0,0,0,0,0};
+			int[] harValues = {7,30,30,48,48,129,145,160,186,221,275,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] kyrValues = {38,40,72,84,96,117,142,170,229,275,275,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] lemValues = {53,72,91,101,108,158,200,216,246,255,275,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] linValues = {72,72,74,84,101,108,178,192,221,223,223,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] merValues = {7,10,131,157,162,181,186,200,200,216,229,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] sajValues = {146,155,170,181,230,246,255,275,275,275,275,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] seeValues = {35,38,50,72,126,126,142,241,252,275,275,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] seoValues = {65,81,89,150,154,179,216,229,230,255,275,275,275,275,275,0,0,0,0,0,0,0,0,0,0};
+			int[] valValues = {7,35,35,38,50,117,142,142,174,184,241,252,275,275,275,0,0,0,0,0,0,0,0,0,0};
 			
 			switch((int) char_id){
 			case 1:
@@ -1134,7 +1143,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			else if(c.getInt(c.getColumnIndex(KEY_CARD_23)) == old_id){ cardKey = KEY_CARD_23;}
 			else if(c.getInt(c.getColumnIndex(KEY_CARD_24)) == old_id){ cardKey = KEY_CARD_24;}
 			else if(c.getInt(c.getColumnIndex(KEY_CARD_25)) == old_id){ cardKey = KEY_CARD_25;}
-			
+
+			c.close();
 			cv.put(cardKey, new_id);
 			
 			db.update(TABLE_DECK, cv, KEY_ID + " = ?", new String[] { String.valueOf(deck_id) });
@@ -1178,7 +1188,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 			d.setCard(23, c.getInt(c.getColumnIndex(KEY_CARD_23)));
 			d.setCard(24, c.getInt(c.getColumnIndex(KEY_CARD_24)));
 			d.setCard(25, c.getInt(c.getColumnIndex(KEY_CARD_25)));
-			
+
+			c.close();
 			return d;
 			
 		}
